@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Logout{% endblock %}
+
+{% block content %}
+<div class="logout-container">
+    <h2>Você realmente deseja sair?</h2>
+    
+    <form method="post" action="{% url 'logout' %}">
+        {% csrf_token %}
+        <button type="submit">Confirmar Logout</button>
+    </form>
+
+    <p>
+        <a href="{% url 'painel' %}">Cancelar e voltar ao painel</a>
+    </p>
+</div>
+{% endblock %}

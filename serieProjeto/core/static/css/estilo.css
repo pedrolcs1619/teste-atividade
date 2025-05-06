@@ -1,0 +1,278 @@
+/* Estilo geral da página */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6ecf0;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 42px;
+    color: #333;
+    margin: 0;
+}
+
+.novo-filme {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.btn-criar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-criar:hover {
+    background-color: #218838;
+}
+
+.btn-excluir {
+    background-color: #dc3545;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-excluir:hover {
+    background-color: #c82333;
+}
+
+
+
+/* Seção dos filmes */
+.filmes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Cada filme individual */
+.filme {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+
+/* Animação ao passar o mouse */
+.filme:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+/* Imagens dos filmes */
+.filme img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Título do filme */
+.filme h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #222;
+}
+
+/* Descrição do filme */
+.filme p {
+    font-size: 25px;
+    color: #555;
+    line-height: 1.4;
+}
+
+/* Estilo do formulário de filtro */
+.filtro-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilo do rótulo (label) */
+.filtro-form label {
+    font-size: 16px;
+    color: #333;
+    margin-right: 10px;
+}
+
+/* Estilo do campo de entrada (input) */
+.filtro-form input[type="number"] {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 120px;
+    margin-right: 15px;
+}
+
+/* Estilo do botão de envio */
+.filtro-form button {
+    padding: 8px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Alteração de cor do botão ao passar o mouse */
+.filtro-form button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* form */
+
+.form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form p {
+    margin-bottom: 15px;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea, form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.btn-salvar {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+}
+
+.btn-salvar:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* confirmar_delete.html */
+
+.confirmar-delete {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.btn-confirmar {
+    background-color: #dc3545;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-cancelar {
+    background-color: #6c757d;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-confirmar:hover {
+    background-color: #c82333;
+}
+
+.btn-cancelar:hover {
+    background-color: #5a6268;
+}
